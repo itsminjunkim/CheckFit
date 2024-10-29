@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.Fragment_meal"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/dateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="날짜"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/mealbackground">
+
+        <LinearLayout
+            android:id="@+id/breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/mealview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/recipekorea"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="아침"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:fontFamily="@font/recipekorea"
+                android:id="@+id/morningKcalText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:paddingRight="15dp"
+                android:text="kcal"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mealview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/recipekorea"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="점심"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/recipekorea"
+                android:id="@+id/lunchKcalText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingRight="15dp"
+                android:text="kcal"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mealview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/recipekorea"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="저녁"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/recipekorea"
+                android:id="@+id/dinnerKcalText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingRight="15dp"
+                android:text="kcal"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/recipekorea"
+            android:layout_marginTop="20dp"
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="오늘 하루"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:fontFamily="@font/recipekorea"
+            android:layout_marginRight="10dp"
+            android:id="@+id/todayKcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="총 칼로리"
+            android:textSize="25sp" />
+
+        <TextView
+            android:fontFamily="@font/recipekorea"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/todayCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="탄수화물" />
+
+        <TextView
+            android:fontFamily="@font/recipekorea"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/todayProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="단백질" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/recipekorea"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/todayFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지방" />
+
+    </LinearLayout>
+
+</LinearLayout>

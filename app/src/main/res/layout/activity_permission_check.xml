@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PermissionCheckActivity"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkfit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/recipekorea"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="CheckFit의 다양한 기능을 활용하기 위해 아래의 기능을 허용해주세요" />
+
+        <Switch
+            android:switchPadding="20sp"
+            android:switchMinWidth="60sp"
+            android:layout_marginTop="20sp"
+            android:id="@+id/alarmSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림" />
+
+        <Switch
+            android:layout_marginTop="20sp"
+            android:switchPadding="20sp"
+            android:switchMinWidth="60sp"
+            android:id="@+id/physicalSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신체" />
+
+        <Switch
+            android:switchPadding="20sp"
+            android:switchMinWidth="60sp"
+            android:layout_marginTop="20sp"
+            android:id="@+id/locationSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:textColor="@color/white"
+            android:background="@drawable/login_button"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:id="@+id/permissionCheckButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료" />
+    </LinearLayout>
+</LinearLayout>

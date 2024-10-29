@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.DateFragment">
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top" />
+
+    <TextView
+        android:fontFamily="@font/recipekorea"
+        android:layout_gravity="center"
+        android:id="@+id/fragmentDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/dateTodayKcal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="칼로리" />
+
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/dateTodayCarbo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="탄수화물" />
+
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/dateTodayProtein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="단백질" />
+
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/dateTodayFat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지방" />
+
+
+</LinearLayout>
